@@ -1,0 +1,155 @@
+@media (max-width: 1600px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        padding: 0;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 23px;
+        border: none;
+        color: #000;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .burger-line {
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: currentColor;
+    }
+
+    .burger-line:first-child {
+        top: 0;
+    }
+
+    .burger-line:nth-child(3) {
+        bottom: 0;
+    }
+
+    .burger-line:nth-child(2) {
+        top: 44%;
+    }
+
+    .header__logo {
+        width: 150px;
+        height: 48px;
+    }
+    
+    .pagination {
+        padding: 160px 77px;
+    }
+
+    .pagination__title {
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 16px;
+    }
+
+    .pagination__descr {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .pagination {
+        margin-bottom: 35px;
+    }
+
+    .about-us__top {
+        margin-bottom: 60px;
+    }
+
+    .flex__about-us {
+        flex-direction: column;
+    }
+
+    .about-us__left_back {
+        width: 100%;
+        height: 640px;
+        background-size: cover;
+    }
+
+    .about-us__btn  {
+        padding: 18px 35px;
+    }
+
+    .about-us__card {
+        padding-left: 317px;
+        width: 100%;
+        background-position: 77px 65px;
+    }
+
+    .how-we-work__flex {
+        margin-top: 49px;
+    }
+
+    .how-we-work__indent {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .how-we-work__left {
+        min-width: calc((100% - 50px) / 2);
+        margin-right: 50px;
+    }
+
+    .how-we-work__slider-descr {
+        margin-bottom: 24px;
+    }
+
+    .how-we-work__right {
+        min-width: calc((100% - 50px) / 2);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .faq {
+        margin-bottom: 80px;
+    }
+
+    .faq__title-item {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 39px 150px 39px 0;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+
+    .footer__right {
+        display: none;
+    }
+
+    .footer__button {
+        padding: 19px 38px;
+        font-size: 16px;
+        width: 241px;
+    }
+
+    .footer__button {
+        margin-right: 20px;
+    }
+
+    .footer__checkbox {
+        min-width: 277px;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
