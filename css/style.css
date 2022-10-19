@@ -240,8 +240,10 @@ body {
 /* pagination */
 
 .pagination {
-    background-image: url(../img/hero-back.jpg);
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 100px 80px;
     border-radius: 32px;
 }
@@ -277,6 +279,10 @@ body {
     gap: 32px;
 }
 
+.about-us__hidden {
+    display: none;
+}
+
 .about-us__top {
     max-width: 1235px;
 }
@@ -292,8 +298,12 @@ body {
 .about-us__left_back {
     position: relative;
     background-image: url(../img/about-us_left.jpg);
-    width: 868px;
-    height: 622px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc((100% - 32px) / 2);
+    min-height: 622px;
+    max-height: 868px;
     border-radius: 32px;
     overflow: hidden;
 }
@@ -339,14 +349,15 @@ body {
 }
 
 .about-us__card-text {
-    max-width: 470px;
+    width: 100%;
+    max-width: 460px;
 }
 
 .about-us__card {
-    min-width: 870px;
+    width: calc((100% - 32px) / 2);
+    width: 100%;
     outline: 1px solid #CACACA;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding: 65px 50px 65px 300px;
     padding-left: 300px;
     background-repeat: no-repeat;
     background-position: 60px 65px;
@@ -529,6 +540,8 @@ body {
 
 /* footer */
 .footer {
+    margin: 0 auto;
+    max-width: 1920px;
     justify-content: space-between;
     padding: 50px 75px;
     background-color: #222222;
