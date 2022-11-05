@@ -24,12 +24,17 @@ menuLinks.forEach(function (el) {
 })
 
 // accordion
-new Accordion('.accordion-list', {
-  elementClass: 'accordion',
-  triggerClass: 'accordion__control',
-  panelClass: 'accordion__content',
-  activeClass: 'accordion--active'
+document.addEventListener("DOMContentLoaded", function() {
+  let acc = new Accordion('.accordion__list', {
+  duration: 700,
+  elementClass: 'accordion__item',
+  triggerClass: 'accordion__top',
+  panelClass: 'accordion__bottom',
+  showMultiple: false,
+  openOnInit: [0],
+    collapse: false
 });
+})
 
 // tabs
 let tabsBtn = document.querySelectorAll('.tabs-nav__btn');
@@ -67,4 +72,19 @@ document.addEventListener("click", function(e) {
 document.querySelector(".form-btn__closed").addEventListener("click", function() {
   document.querySelector(".form").classList.remove("form__active");
   document.querySelector(".form-btn__closed").classList.remove("form-btn__closed--active");
+})
+
+// pagination
+const container = document.querySelector(".container")
+const swiper = new Swiper('.hero__swiper', {
+  // Default parameters
+
+  speed: 300,
+  loop: true,
+  pagination: {
+    el: '.hero__pagination',
+    type: 'bullets',
+    clickable: true
+  }
+
 })
