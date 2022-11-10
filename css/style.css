@@ -838,6 +838,11 @@ body {
   fill: #FF9900;
 }
 
+.footer__social-link:focus {
+  outline: 2px solid #FF9900;
+  outline-offset: 5px;
+}
+
 .footer__social-link:active svg [fill] {
   fill: #E1670E;
 }
